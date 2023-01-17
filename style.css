@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em 1em 1em;
+}
+
+.header-title {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: #0E0E0E;
+}
+
+.lt { 
+    font-weight: bold;
+    font-size: 0.875rem;
+    align-self: center;
+}
+
+.logo {
+    width: 1.44rem;
+    height: 1.44rem;
+    margin-top: auto;
+    margin-bottom: auto; 
+    margin-right: .25em;
+}
+
+nav {
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .75rem;
+    color: #090909;
+    padding-left: 1.5em;
+}
+
+.hero-section {
+    width: 100vw;
+    height: 293px;
+    background: url("images/article-image-hero.png") bottom;
+    background-size: 100%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1.25em 0 1.25em;
+}
+
+.date {
+    font-size: .75rem;
+    margin: 0;
+}
+
+.hero-title {
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: .3em
+}
+
+.blurb {
+    font-size: 1rem;
+    margin-bottom: 1.25em;
+}
+
+.blog {
+    padding-top: 1.5em;
+}
+
+.blog-img {
+    width: 100%;
+}
+
+.large-date {
+    font-size: .875rem;
+    font-weight: 400;
+    padding-bottom: .5em;
+}
+
+.blog-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: .5em;
+}
+
+.blog-preview {
+    font-size: 1rem;
+}
+
+.blogs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    padding: 1em 1em;
+}
+
+footer {
+    background-color: #202020;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #ECECEC;
+    text-align: center;
+    font-size: .75em;
+    padding: 2.3em;
+}
+
+.footer-title {
+    font-weight: bold; 
+}
+
+@media (min-width: 950px) {
+    .hero-section {
+        height: 488px;
+        padding: 2em 3em;
+    }
+    .hero-title,
+    .blurb {
+        max-width: 600px;
+        margin-bottom: .5em;
+    }
+    .hero-title {
+        font-size: 2.5em;
+    }
+    .date,
+    .blurb {
+        font-size: 1em;
+        font-weight: 300; 
+    }
+}
